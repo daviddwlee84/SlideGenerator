@@ -1,5 +1,7 @@
 # Slide Generator
 
+## Idea
+
 Use LLM generate Marp slides
 
 This is a retrieval augmented generation application.
@@ -13,6 +15,22 @@ In addition, we can have agents that download related figure or extract figure f
 1. For each document we will use LlamaIndex for vector storage.
 2. Prompts for each page, for example "What is the motivation of this document, summarize into 3 bullet points."
 3. We will use Marp to generate slides and can easily convert to different slides format.
+
+## Getting Started
+
+Copy `example.env` to `.env`, and fill your OpenAI keys. (Or you can input manually in the Streamlit UI)
+
+```bash
+pip install -r requirements.txt
+streamlit run Main.py
+```
+
+## Contribution
+
+Use Black formatter in this project.
+For the import require in specific order, use `# noqa` at the end of the line.
+
+- [Formatting Python in Visual Studio Code](https://code.visualstudio.com/docs/python/formatting)
 
 ## Todo
 
